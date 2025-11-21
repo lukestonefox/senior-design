@@ -1,3 +1,16 @@
 # Tasklist
-- Research existing plant care apps and identify their strengths and weaknesses
-- Define the core features and functionalities of the plant care app
+- Research existing plant care apps and identify their strengths and weaknesses (All)
+- Setup project repository and initial file structure (All)
+- Setup app (Lucas)
+- Setup hardware (Mason)
+- Research cloud database options (Lucas)
+- Setup API for cloud database (Lucas)
+- Research modulare hardware components (Mason)
+- Test middleware between app and hardware (All)
+- Research deployment options for cloud database (Lucas)
+- Setup CI/CD pipeline for app (All)
+- Research Docker for local development (All)
+- Choose authentication method for app (Mason)
+- Implement user authentication (Mason)
+- Design app UI/UX (All)
+- Implement core app features (All)
