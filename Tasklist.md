@@ -5,7 +5,7 @@
 - Setup hardware (Mason)
 - Research cloud database options (Lucas)
 - Setup API for cloud database (Lucas)
-- Research modulare hardware components (Mason)
+- Research modular hardware components (Mason)
 - Test middleware between app and hardware (All)
 - Research deployment options for cloud database (Lucas)
 - Setup CI/CD pipeline for app (All)
