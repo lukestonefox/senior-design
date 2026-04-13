@@ -41,8 +41,35 @@ Additionally, use Android's navigation back stack to allow users to easily navig
 ---
 
 ## Test Plan and Results
+### Description
+Plantir has unit testing for the mobile app, embedded system, and cloud VPS components. These tests cover, but are not limited to, the following:
+- Mobile App: UI tests for navigation and user interactions, unit tests for data processing and state management, and integration tests for API calls to the cloud VPS.
+- Embedded System: Unit tests for sensor data collection and processing, integration tests for MQTT communication with the cloud VPS, and end-to-end tests for the watering system.
+- Cloud VPS: Unit tests for MQTT message handling and database queries, integration tests for user authentication and data security, and end-to-end tests for the automatic watering system.
 
+As for informal testing, we have been testing the system throughout the development process by setting up a test plant with the microcontroller and sensors, and using the mobile app to monitor the plant's health and control the watering system. This has allowed us to identify and fix issues in real-time, ensuring that the system is robust and reliable. We have also been testing the system with different plant species and under various conditions to ensure that it can handle a wide range of scenarios and provide accurate data and recommendations to the user.
 
+We have also been testing the provisioning process extensively, ensuring that the Bluetooth Low Energy (BLE) connection is stable and that the microcontroller can reliably connect to the cloud VPS and mobile app. This has involved testing with different Android devices and under various environmental conditions to ensure that the provisioning process is seamless for all users.
+
+We also have done general workflow testing: setting up the hardware, provisioning the plant with the app, monitoring the plant's health, and controlling the watering system -- acting as a user. This has allowed us to identify any issues in the overall user experience and make improvements as needed.
+
+### Test Cases
+
+| Identifier | Purpose | Description | Expected Output | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| TC1 | Mobile App UI Test | Test navigation from Home Screen to Plant Detail Screen | Plant Detail Screen is displayed with correct plant information | Pass |
+| TC2 | Mobile App API Test | Test API call to cloud VPS for plant data | Cloud VPS returns correct plant data | Pass |
+| TC3 | Embedded System Sensor Test | Test soil moisture sensor data collection | Data is collected and processed correctly | Pass |
+| TC4 | Embedded System MQTT Test | Test MQTT communication between microcontroller and cloud VPS | Cloud VPS receives and processes MQTT message correctly | Pass |
+| TC5 | Cloud VPS Authentication Test | Test user authentication process | User is authenticated successfully and can access their plant data | Pass |
+| TC6 | Delete Plant Test | Test the process of deleting a plant from the app | The plant is removed from the user's account and all associated data is deleted from the cloud VPS | Pass |
+| TC7 | Automatic Watering Test | Test the automatic watering system when soil moisture drops below optimal range | | Soil moisture level drops below the user-defined threshold | The system automatically activates the water pump to water the plant, and a notification is sent to the user | Functional | End-to-End | Pass |
+| TC8 | Provisioning Test | Test the Bluetooth Low Energy (BLE) provisioning process | | User initiates provisioning process in the mobile app | The microcontroller is detected via BLE, and the user can successfully connect it to the app and cloud VPS | Functional | End-to-End | Pass |
+| TC9 | OTA Update Test | Test the Over-the-air (OTA) update process for the microcontroller | | A new firmware update is available for the microcontroller | The user can initiate the OTA update from the mobile app, and the microcontroller successfully updates its firmware without needing physical access | Functional | End-to-End | Pass |
+| TC10 | Add Plant Test | Test the process of adding a new plant to the app | The user can successfully input the necessary information, connect the microcontroller via BLE, and the new plant is added to their account with all associated data stored in the cloud VPS | Functional | End-to-End | Pass |
+| TC11 | Data Security Test | Test the security of user data in the cloud VPS | Access is denied, and the user's data remains secure | Functional | Unit | Pass |
+| TC12 | Performance Test | Test the response time of the mobile app when fetching plant data from the cloud VPS | Plant data is fetched within 3 seconds of home screen load | Pass |
+| TC13 | RLS Test | Test Row-Level Security (RLS) in the cloud VPS to ensure users can only access their own plant data | User 1 cannot see, update, add to, or delete User 2's plant data | Pass |
 
 ---
 
@@ -83,9 +110,8 @@ The hardware setup uses the following components:
 ---
 
 ## Spring Presentation
-![Spring Presentation](./Documents/Spring%20Final%20Presentation.pdf)
-<iframe src="./Documents/Spring Final Presentation.pdf" width="100%" height="600px"></iframe>
-// TODO: embed the PDF in the README
+[Spring Presentation (limited to people within UC)](https://mailuc-my.sharepoint.com/:p:/g/personal/foxlc_mail_uc_edu/IQDPgdCk3MSSS5DOcwlFFipPAZViJdn_0Lyr5vD9pFRWi5E?e=3hMGCd)
+[Spring Presentation (public pdf)](./Documents/Spring%20Final%20Presentation.pdf)
 
 ## Expo Poster
 ![Poster](./Documents/2026%20Plantir%20Expo%20Poster%20FINAL.png)
