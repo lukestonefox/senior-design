@@ -110,19 +110,31 @@ The hardware setup uses the following components:
 ---
 
 ## Spring Presentation
-[Spring Presentation (limited to people within UC)](https://mailuc-my.sharepoint.com/:p:/g/personal/foxlc_mail_uc_edu/IQDPgdCk3MSSS5DOcwlFFipPAZViJdn_0Lyr5vD9pFRWi5E?e=3hMGCd)
-[Spring Presentation (public pdf)](./Documents/Spring%20Final%20Presentation.pdf)
+[Spring Presentation (limited to people within the University of Cincinnati)](https://mailuc-my.sharepoint.com/:p:/g/personal/foxlc_mail_uc_edu/IQDPgdCk3MSSS5DOcwlFFipPAZViJdn_0Lyr5vD9pFRWi5E?e=3hMGCd)
+[Spring Presentation (public pdf)](./Documents/Spring%20Final%20Presentation.png)
 
 ## Expo Poster
-![Poster](./Documents/2026%20Plantir%20Expo%20Poster%20FINAL.png)
+![Poster](./Documents/2026%20Plantir%20Expo%20Poster.png)
 
 ## Assessments
 - Final self assessment
 
 ## Summary of Hours
 
-// TODO: Give both semester summaries for each team member (hours and amount); give a total for each team member for the year (hours and amount); give a total for the project (hours and amount); a paragraph of justification of the activities for each team member associated with the hours should be given. Provide links to project notebooks or to meeting notes, which provides evidence of hours.
+Both team members worked full-time jobs alongside school during both semesters, so time was limited to weekends and evenings. That work time equaled out to ~ 5-6 hours per week per person, which is a reasonable amount of time to dedicate to a senior design project while balancing other responsibilities. We were able to make significant progress on the project each week, and we consistently met our milestones and deadlines. Fall semester had less hours as we were still in the early stages and mainly planning, ideating, and then setting up. Spring semester had more hours as we were in the thick of development, testing, and iteration. We also had the Expo poster and presentation to prepare for at the end of the semester, which required additional time and effort. Our first visable product was available in January 2026, and we spent the rest of the semester improving and iterating on that product, as well as preparing for the Expo. This VP allowed for more time invested in debugging, testing, and development.
 
+Fall 2025 Hours Summary:
+- Lucas Fox: 45 hours
+- Mason Trippel: 45 hours
+
+Spring 2026 Hours Summary:
+- Lucas Fox: 80 hours
+- Mason Trippel: 80 hours
+
+Total Hours Summary:
+- Lucas Fox: 125 hours
+- Mason Trippel: 125 hours
+- **Project Total: 250 hours**
 
 ## Summary of Expenses
 Hardware and services we'd view as required:
