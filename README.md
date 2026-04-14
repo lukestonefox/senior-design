@@ -66,10 +66,9 @@ We also have done general workflow testing: setting up the hardware, provisionin
 | TC7 | Automatic Watering Test | Test the automatic watering system when soil moisture drops below optimal range | Dispense 7mL of water when soil moisture drops below the optimal range for the specific plant species, and the system enters a cooldown period to prevent overwatering | Pass |
 | TC8 | Provisioning Test | Test the Bluetooth Low Energy (BLE) provisioning process | The microcontroller is detected by the app, connects to the cloud VPS, and the plant is added to the user's account with all associated data stored in the cloud VPS | Pass |
 | TC9 | OTA Update Test | Test the Over-the-air (OTA) update process for the microcontroller | The microcontroller successfully downloads and installs the new firmware after receveing a update_firware command | Pass |
-| TC10 | Add Plant Test | Test the process of adding a new plant to the app | The user can successfully input the necessary information, connect the microcontroller via BLE, and the new plant is added to their account with all associated data stored in the cloud VPS | Pass
-| TC11 | Data Security Test | Test the security of user data in the cloud VPS | Access is denied, and the user's data remains secure | Pass |
-| TC12 | Performance Test | Test the response time of the mobile app when fetching plant data from the cloud VPS | Plant data is fetched within 3 seconds of home screen load | Pass |
-| TC13 | RLS Test | Test Row-Level Security (RLS) in the cloud VPS to ensure users can only access their own plant data | User 1 cannot see, update, add to, or delete User 2's plant data | Pass |
+| TC10 | Add Plant Test | Test the process of adding a new plant to the app | The user can successfully input the necessary information, connect the microcontroller via BLE, and the new plant is added to their account with all associated data stored in the cloud VPS | Pass |
+| TC11 | Performance Test | Test the response time of the mobile app when fetching plant data from the cloud VPS | Plant data is fetched within 3 seconds of home screen load | Pass |
+| TC12 | RLS Test | Test Row-Level Security (RLS) in the cloud VPS to ensure users can only access their own plant data | User 1 cannot see, update, add to, or delete User 2's plant data | Pass |
 
 ---
 
