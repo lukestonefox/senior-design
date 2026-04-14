@@ -117,7 +117,7 @@ The hardware setup uses the following components:
 ![Poster](./Documents/2026%20Plantir%20Expo%20Poster.png)
 
 ## Assessments
-- Final self assessment
+[Spring 2026 Self Assessment](./Documents/Self%20Assessment.pdf)
 
 ## Summary of Hours
 
@@ -138,16 +138,15 @@ Total Hours Summary:
 
 ## Summary of Expenses
 Hardware and services we'd view as required:
-- Nano ESP32: $10.99
-- Soil moisture sensor: $5.99
+- Nano ESP32: $7
 - VPS: $5-10/month
+- Miscellaneous hardware (wires, resistors, board, relay module, etc.): $25
 
 Optional hardware and services:
-- Temperature and humidity sensor: $5.99
-- Light sensor: $5.99
+- All 4 sensors (soil moisture, temperature, humidity, light): $6.50
 - 3D printed enclosure: $20-50
-- Water pump: $10-20
+- Water pump: $6
 
 ## Appendix
 
-// TODO: links to repo, notion, and any other relevant project documentation or resources.
+[Plantir GitHub Repository](https://github.com/lukestonefox/Plantir)
