@@ -63,11 +63,11 @@ We also have done general workflow testing: setting up the hardware, provisionin
 | TC4 | Embedded System MQTT Test | Test MQTT communication between microcontroller and cloud VPS | Cloud VPS receives and processes MQTT message correctly | Pass |
 | TC5 | Cloud VPS Authentication Test | Test user authentication process | User is authenticated successfully and can access their plant data | Pass |
 | TC6 | Delete Plant Test | Test the process of deleting a plant from the app | The plant is removed from the user's account and all associated data is deleted from the cloud VPS | Pass |
-| TC7 | Automatic Watering Test | Test the automatic watering system when soil moisture drops below optimal range | | Soil moisture level drops below the user-defined threshold | The system automatically activates the water pump to water the plant, and a notification is sent to the user | Functional | End-to-End | Pass |
-| TC8 | Provisioning Test | Test the Bluetooth Low Energy (BLE) provisioning process | | User initiates provisioning process in the mobile app | The microcontroller is detected via BLE, and the user can successfully connect it to the app and cloud VPS | Functional | End-to-End | Pass |
-| TC9 | OTA Update Test | Test the Over-the-air (OTA) update process for the microcontroller | | A new firmware update is available for the microcontroller | The user can initiate the OTA update from the mobile app, and the microcontroller successfully updates its firmware without needing physical access | Functional | End-to-End | Pass |
-| TC10 | Add Plant Test | Test the process of adding a new plant to the app | The user can successfully input the necessary information, connect the microcontroller via BLE, and the new plant is added to their account with all associated data stored in the cloud VPS | Functional | End-to-End | Pass |
-| TC11 | Data Security Test | Test the security of user data in the cloud VPS | Access is denied, and the user's data remains secure | Functional | Unit | Pass |
+| TC7 | Automatic Watering Test | Test the automatic watering system when soil moisture drops below optimal range | Dispense 7mL of water when soil moisture drops below the optimal range for the specific plant species, and the system enters a cooldown period to prevent overwatering | Pass |
+| TC8 | Provisioning Test | Test the Bluetooth Low Energy (BLE) provisioning process | The microcontroller is detected by the app, connects to the cloud VPS, and the plant is added to the user's account with all associated data stored in the cloud VPS | Pass |
+| TC9 | OTA Update Test | Test the Over-the-air (OTA) update process for the microcontroller | The microcontroller successfully downloads and installs the new firmware after receveing a update_firware command | Pass |
+| TC10 | Add Plant Test | Test the process of adding a new plant to the app | The user can successfully input the necessary information, connect the microcontroller via BLE, and the new plant is added to their account with all associated data stored in the cloud VPS | Pass
+| TC11 | Data Security Test | Test the security of user data in the cloud VPS | Access is denied, and the user's data remains secure | Pass |
 | TC12 | Performance Test | Test the response time of the mobile app when fetching plant data from the cloud VPS | Plant data is fetched within 3 seconds of home screen load | Pass |
 | TC13 | RLS Test | Test Row-Level Security (RLS) in the cloud VPS to ensure users can only access their own plant data | User 1 cannot see, update, add to, or delete User 2's plant data | Pass |
 
@@ -110,7 +110,7 @@ The hardware setup uses the following components:
 ---
 
 ## Spring Presentation
-[Spring Presentation (limited to people within the University of Cincinnati)](https://mailuc-my.sharepoint.com/:p:/g/personal/foxlc_mail_uc_edu/IQDPgdCk3MSSS5DOcwlFFipPAZViJdn_0Lyr5vD9pFRWi5E?e=3hMGCd)
+[Spring Presentation (limited to people within the University of Cincinnati)](https://mailuc-my.sharepoint.com/:p:/g/personal/foxlc_mail_uc_edu/IQDPgdCk3MSSS5DOcwlFFipPAZViJdn_0Lyr5vD9pFRWi5E?e=3hMGCd)\
 [Spring Presentation (public pdf)](./Documents/Spring%20Final%20Presentation.png)
 
 ## Expo Poster
